@@ -37,7 +37,7 @@ public class StopwatchActivity extends Activity {
         wasRun = running;
         running = false;
     }
-
+    
     @Override
     protected void onResume() {
         super.onResume();
@@ -45,7 +45,24 @@ public class StopwatchActivity extends Activity {
             running=true;
         }
     }
-
+     // @Override
+   // protected void onStop() {
+     //   super.onStop();
+       // wasRun = running;
+       // running = false;
+    //}
+     //@Override
+    //protected void onStart() {
+      //  super.onStart();
+        //if(wasRun){
+          //  running=true;
+        //}
+    //}
+        //@Override
+    //protected void onDestroy(){
+      //  super.onDestroy();
+       // finish();
+    //}
     //Start the stopwatch running when the Start button is clicked.
     public void onClickStart(View view) {
         running = true;
